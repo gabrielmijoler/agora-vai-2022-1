@@ -33,11 +33,15 @@ function App() {
           <AppHeader />
 
           <Box component="main" sx={{ margin: '24px' }}>
-            <Routes>
-              <Route path="/aluno" element={<AlunoList />} />
+          <Route path="/aluno" element={<AlunoList />} />
               <Route path="/aluno/novo" element={<AlunoForm />} />
               <Route path="/aluno/:id" element={<AlunoForm />} />
-            </Routes>
+              <Route path="/professor" element={<ProfessorList />} />
+              <Route path="/professor/novo" element={<ProfessorForm />} />
+              <Route path="/professor/:id" element={<ProfessorForm />} />
+              <Route path="/curso" element={<CursoList />} />
+              <Route path="/curso/novo" element={<CursoForm />} />
+              <Route path="/curso/:id" element={<CursoForm />} />
           </Box>
 
           <AppFooter />
